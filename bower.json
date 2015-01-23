@@ -1,8 +1,8 @@
 {
-  "name": "Flair",
-  "main": "flair.js",
+  "name": "Elan",
+  "main": "elan.js",
   "version": "0.0.1",
-  "homepage": "https://github.com/satya164/flair",
+  "homepage": "https://github.com/satya164/elan",
   "authors": [
     "Satyajit Sahoo <satyajit.happy@gmail.com>"
   ],

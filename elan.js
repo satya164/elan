@@ -1,5 +1,5 @@
 /**
- * @fileOverview - Library to manage CSS stylesheets.
+ * @fileOverview - Simple library to manage CSS stylesheets.
  * @author - Satyajit Sahoo <satyajit.happy@gmail.com>
  */
 
@@ -7,18 +7,18 @@
 	"use strict";
 
 	/**
-	 * Construct a Flair object
+	 * Construct a Elan object
 	 * @constructor
 	 * @param {String} attr
 	 * @param {String} value
-	 * @example new Flair("media", "screen")
+	 * @example new Elan("media", "screen")
 	 */
-	function Flair(attr, value) {
+	function Elan(attr, value) {
 		var style;
 
         // Handle situation where called without "new" keyword
-        if (false === (this instanceof Flair)) {
-            return new Flair(attr, value);
+        if (false === (this instanceof Elan)) {
+            return new Elan(attr, value);
         }
 
         style = document.createElement("style"); // Create a style element
@@ -41,7 +41,7 @@
 		this.sheet = style.sheet;
 	}
 
-	Flair.prototype = {
+	Elan.prototype = {
 		/**
 		 * Provide a cross-browser way to add CSS rules
 		 * @param {String} selector
@@ -185,12 +185,12 @@
 	if (typeof define === "function" && define.amd) {
 	    // Define as AMD module
 	    define(function() {
-	        return Flair;
+	        return Elan;
 	    });
 	} else if (typeof module !== "undefined" && module.exports) {
 	    // Export to CommonJS
-	    module.exports = Flair;
+	    module.exports = Elan;
 	} else {
-	    window.Flair = Flair;
+	    window.Elan = Elan;
 	}
 }());
