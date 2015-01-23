@@ -1,0 +1,27 @@
+{
+  "name": "Flair",
+  "main": "flair.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/satya164/flair",
+  "authors": [
+    "Satyajit Sahoo <satyajit.happy@gmail.com>"
+  ],
+  "description": "A simple library to manage CSS stylesheets",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "css",
+    "stylesheet"
+  ],
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
