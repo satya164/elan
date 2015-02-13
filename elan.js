@@ -54,11 +54,11 @@
             index = (typeof index === "number" && !isNaN(index)) ? index : this.sheet.cssRules.length;
 
             if (this.sheet.insertRule) {
-                this.sheet.insertRule(selector + " {" + rules+ "}", index);
+                this.sheet.insertRule(selector + " {" + rules + "}", index);
             } else if (this.sheet.addRule) {
                 this.sheet.addRule(selector, rules, index);
             } else {
-                this.HTMLStyleElement.appendChild(document.createTextNode(selector + "{" + rules+ "}"));
+                this.HTMLStyleElement.appendChild(document.createTextNode(selector + "{" + rules + "}"));
             }
 
             return this;
