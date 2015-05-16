@@ -73,7 +73,7 @@
         removeRule: function(index) {
             if ("removeRule" in this.sheet) {
                 this.sheet.removeRule(index);
-            } else if ("deleteRule") {
+            } else if ("deleteRule" in this.sheet) {
                 this.sheet.deleteRule(index);
             }
 
