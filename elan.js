@@ -155,7 +155,7 @@
                     this.removeRule(index);
                 }
             } else {
-                for (var i = 0, l = rules.length; i < l; i++) {
+                for (var i = rules.length - 1; i >= 0; i--) {
                     if (rules[i].selectorText === selector) {
                         this.removeRule(i);
                     }
